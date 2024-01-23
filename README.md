@@ -9,6 +9,9 @@ To build using the CC65 suite to output a .PRG file compatible with the [Command
 
 `cl65 -t cx16 -o printString.PRG`
 
+## TO-DO
+* Make the delay subroutine togglable by setting the number of times (0 to 255) to run delay after each byte printed
+
 ## CREDITS
 * The delay and delayloop subroutines were written by [Jamie Bainbridge](https://superjamie.github.io/2020/01/14/delay-loop-in-6502-assembly)
 * The 8-Bit Guy for developing such an entertaining 6502 development environment
