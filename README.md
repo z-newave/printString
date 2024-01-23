@@ -7,7 +7,7 @@ Written for the CC65 compiler suite for the Commander X16 (but can easily be por
 ## BUILDING
 To build using the CC65 suite to output a .PRG file compatible with the [Commander X16 emulator](https://github.com/x16community/x16-emulator), simply run:
 
-`cl65 -t cx16 -o printString.PRG`
+`cl65 -t cx16 -o printString.PRG printString.asm`
 
 ## TO-DO
 * Make the delay subroutine togglable by setting the number of times (0 to 255) to run delay after each byte printed
