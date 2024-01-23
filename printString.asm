@@ -32,7 +32,8 @@
 ;    before raw PETSCII bytes)
 ;
 ;    EFFECTS: all registers saved and restored. No changes to A, X or Y.
-;    MEMORY USED: $10 through $18 of the zero-page (9 bytes)
+;    MEMORY USED: $10 through $18 of the zero-page (9 bytes, though only 6
+;    used currently. 7 if the delay function is used)
 
 .org $080D                      ; change if embedding in something else
 .segment "STARTUP"
