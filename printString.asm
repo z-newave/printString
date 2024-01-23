@@ -22,10 +22,10 @@
 ;    limit) to the screen using the KERNAL's CHROUT routine. 
 ;
 ;    It uses a 16-bit pointer stored in the zero-page (HIGHBYTE and LOWBYTE),
-;    that points to the memory address where printing should start, alongside
-;    the Accumulator, acting as a counter, which when it overflows increments
-;    the low-byte of the pointer (LOWBYTE) to allow for printing up to 65535
-;    bytes as PETSCII characters.
+;    that points to the memory address where printing should start. The 
+;    Accumulator, acting as a counter for the current byte, increments the 
+;    low-byte of the pointer (LOWBYTE) when it overflows (>= #$FF) to allow 
+;    for printing up to 65,535 bytes as PETSCII characters.
 ;
 ;    To set the address of the text to be printed in an assembler, define the
 ;    str_start variable to an address (for example, adding it as a label 
