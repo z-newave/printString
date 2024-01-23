@@ -1,4 +1,4 @@
-# printScreen - print routine for the Commander X16
+# printString - print routine for the Commander X16
 
 A routine which prints a null-terminated string from a memory address up to 65,535 bytes to the screen.
 
