@@ -23,4 +23,4 @@ Alternatively, simply run `make` to use the included Makefile (which will output
 * The 8-Bit Guy for developing such an entertaining 6502 development environment
 
 ## SCREENSHOT
-![Screenshot of output of printScreen, using the Alex Boniello "Jones Act" copypasta as the sample text](printString.png)
+![Screenshot of output of printString, using the Alex Boniello "Jones Act" copypasta as the sample text](printString.png)
