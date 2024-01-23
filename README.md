@@ -2,12 +2,18 @@
 
 A routine which prints a null-terminated string from a memory address up to 65,535 bytes to the screen.
 
-Written for the CC65 compiler suite for the Commander X16 (but can easily be ported to other assemblers and/or 6502-based computer systems).
+Written for the [CC65 compiler suite](https://cc65.github.io) for the Commander X16 (but can easily be ported to other assemblers and/or 6502-based computer systems).
+
+## PREREQUISITES
+* Commander X16 (emulator or real, but can also easily be ported to other 6502-based systems)
+* `cc65` compiler suite (available in Debian-based distros as `cc65`)
 
 ## BUILDING
 To build using the CC65 suite to output a .PRG file compatible with the [Commander X16 emulator](https://github.com/x16community/x16-emulator), simply run:
 
 `cl65 -t cx16 -o printString.PRG printString.asm`
+
+Alternatively, simply run `make` to use the included Makefile (which will output debug files)
 
 ## TO-DO
 * Make the delay subroutine togglable by setting the number of times (0 to 255) to run delay after each byte printed
